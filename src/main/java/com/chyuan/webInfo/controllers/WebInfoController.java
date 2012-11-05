@@ -1,0 +1,52 @@
+package com.chyuan.webInfo.controllers;
+
+import javax.servlet.ServletContext;
+import net.paoding.rose.web.InvocationLocal;
+import net.paoding.rose.web.annotation.Param;
+import net.paoding.rose.web.annotation.Path;
+import net.paoding.rose.web.annotation.rest.Get;
+import net.paoding.rose.web.annotation.rest.Post;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.chyuan.interceptor.LoginRequired;
+import com.chyuan.utils.Constants;
+import com.chyuan.utils.Utils;
+import com.chyuan.webInfo.home.WebInfoHome;
+import com.chyuan.webInfo.model.WebInfo;
+
+@Path("")
+public class WebInfoController {
+	@Autowired
+	private InvocationLocal inv;
+	@Autowired
+	private WebInfoHome webInfoHome;
+	@Autowired
+	private Utils utils;
+
+	/**
+	 * 后台：跳转到网站信息编辑页面
+	 * @return
+	 */
+	@Get("/admin/webInfo/editPage/{type}")
+	@LoginRequired
+	public String editWebInfoPage(@Param("type")Integer type){
+		WebInfo webInfo = webInfoHome.getWebInfo(type);
+		inv.addModel("webInfo", webInfo);
+		return Constants.A_WEB_INFO;
+	}
+	
+	/**
+	 * 后台：编辑网站信息
+	 * @return
+	 */
+	@Post("/admin/webInfo/edit")
+	@LoginRequired
+	public String editWebInfo(WebInfo webInfo){
+		webInfoHome.editWebInfo(webInfo);
+		WebInfo wi = webInfoHome.getWebInfo(webInfo.getType());
+		ServletContext context = inv.getServletContext();
+		utils.systemConfig((String)context.getAttribute("language"), context);
+		inv.addModel("webInfo", wi);
+		inv.addModel("webInfo_msg", "网站信息编辑成功！");
+		return Constants.A_WEB_INFO;
+	}
+}

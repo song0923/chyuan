@@ -1,0 +1,11 @@
+@charset "utf-8";
+#ChatMenu{cursor:pointer}
+#ChatList img{border:0}
+#ChatList a{color:#036}
+#ChatList a:hover{color:#f30}
+#ChatList .Chat_top{background:url(Chat_Top.gif);height:34px}
+#ChatList .Chat_title{text-align:center;padding:5px;background:url(Chat_title.gif) #bdc5cb no-repeat;color:#000;font-weight:bold}
+#ChatList .Chat_bg{padding:10px 5px 0px 5px;background:url(Chat_bg.gif)}
+#ChatList ul{margin:0;padding:0}
+#ChatList ul li{list-style:none;text-align:center;padding:2px 0px}
+#ChatList .Chat_bottom{background:url(Chat_bottom.gif);height:9px;font-size:1px;line-height:9px;overflow:hidden}

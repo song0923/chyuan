@@ -1,0 +1,76 @@
+@charset "utf-8";
+/********** CSS Document **********/
+html,body {
+	height: 100%
+}
+body {
+	background: url(../images/body.gif);
+	font-size: 12px
+}
+/********** Index **********/
+.index_clear {
+	margin-top: -204px;
+	width: 100%;
+	height: 50%;
+	float: left
+}
+#web_main {
+	margin: auto;
+	clear: both;
+	width: 626px;
+	height: 303px;
+	padding: 105px 0px 0px 0px;
+	background: url(../images/login.png) no-repeat
+}
+.login_right {
+	float: right;
+	width: 345px;
+	padding: 23px 0px 0px 0px
+}
+.login_right ul li {
+	padding: 10px 0px 0px 120px;
+	height: 27px
+}
+.login_right input {
+	height: 17px;
+	border: 0px none;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #555
+}
+#userName,#password {
+	width: 130px
+}
+#checkCode {
+	width: 56px
+}
+.test_buttom {
+	text-align: center;
+	padding-left: 50px
+}
+.test_buttom a {
+	float: left;
+	display: block;
+	width: 63px;
+	height: 28px;
+	text-decoration: none;
+	outline: 0px none;
+	line-height: 28px;
+	background-image: url(../images/login_button.gif);
+	color: #000;
+	margin: 10px 15px 10px 15px;
+	cursor: pointer
+}
+.test_buttom a:hover {
+	position: relative;
+	left: 1px;
+	top: 1px;
+	background-position: 0px -28px
+}
+.test_buttom a:active {
+	position: relative;
+	left: 1px;
+	top: 1px;
+	background-position: 0px -56px
+}
