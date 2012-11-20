@@ -8,11 +8,11 @@
 
 	<repositories>
 		<repository>
-			<id>public</id>
+			<id>thirdparty</id>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
-			<url>http://jmbk.v126157.10000net.cn/nexus/content/groups/public</url>
+			<url>http://jmbk.v126157.10000net.cn/nexus/content/repositories/thirdparty</url>
 		</repository>
 	</repositories>
 
