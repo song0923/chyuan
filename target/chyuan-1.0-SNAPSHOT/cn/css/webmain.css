@@ -104,7 +104,7 @@ body{background:#f6f6f6 url(../images/body_bg.gif) top repeat-x}
 .left-contact p span{font-weight:bold}
 /* page-right */
 .page-right{float:right;padding:0px 15px 0px 10px;width:695px;overflow:hidden}
-.site-nav{background:url(../images/site_nav.gif) no-repeat left center;border-bottom:1px solid #CCC;height:30px;margin-bottom:10px;line-height:30px;text-align:right}
+.site-nav{background:url(../images/site_nav.jpg) no-repeat left center;border-bottom:1px solid #CCC;height:30px;margin-bottom:10px;line-height:30px;text-align:right}
 .site-nav span{color:#025dbf;font-weight:bold}
 .page-single,.page-products,.page-news,.page-newsdetail,.page-jobs,.page-jobsdetail{margin-bottom:10px}
 .page-products ul li{float:left;width:230px;text-align:center;padding-bottom:5px}

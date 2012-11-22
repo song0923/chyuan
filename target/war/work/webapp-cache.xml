@@ -4,8 +4,6 @@
       <string>currentBuild</string>
       <path-set>
         <pathsSet class="linked-hash-set">
-          <string>favicon.ico</string>
-          <string>index.jsp</string>
           <string>cn/chat/Chat_bg.gif</string>
           <string>cn/chat/Chat_bottom.gif</string>
           <string>cn/chat/Chat_Close.gif</string>
@@ -41,6 +39,7 @@
           <string>cn/images/inputbg.gif</string>
           <string>cn/images/leftmenu.gif</string>
           <string>cn/images/logo.gif</string>
+          <string>cn/images/logo.jpg</string>
           <string>cn/images/mainmenu.gif</string>
           <string>cn/images/MainMenu_bg.gif</string>
           <string>cn/images/more.gif</string>
@@ -50,7 +49,7 @@
           <string>cn/images/right.gif</string>
           <string>cn/images/searchbut.gif</string>
           <string>cn/images/searchinp.gif</string>
-          <string>cn/images/site_nav.gif</string>
+          <string>cn/images/site_nav.jpg</string>
           <string>cn/images/site_title.gif</string>
           <string>cn/images/tel.gif</string>
           <string>cn/images/v_line.gif</string>
@@ -60,6 +59,57 @@
           <string>css/reset.css</string>
           <string>css/thickbox.css</string>
           <string>css/xheditor.css</string>
+          <string>en/chat/Chat_bg.gif</string>
+          <string>en/chat/Chat_bottom.gif</string>
+          <string>en/chat/Chat_Close.gif</string>
+          <string>en/chat/Chat_Open.gif</string>
+          <string>en/chat/Chat_title.gif</string>
+          <string>en/chat/Chat_Top.gif</string>
+          <string>en/chat/msn.gif</string>
+          <string>en/chat/site_chat.css</string>
+          <string>en/chat/site_chat.js</string>
+          <string>en/css/ddsmoothmenu.css</string>
+          <string>en/css/webmain.css</string>
+          <string>en/images/back.gif</string>
+          <string>en/images/banner01.jpg</string>
+          <string>en/images/banner02.jpg</string>
+          <string>en/images/banner03.jpg</string>
+          <string>en/images/banner_bg.gif</string>
+          <string>en/images/body_bg.gif</string>
+          <string>en/images/cn.gif</string>
+          <string>en/images/copyright_bg.gif</string>
+          <string>en/images/data_re.gif</string>
+          <string>en/images/del.gif</string>
+          <string>en/images/del_all.gif</string>
+          <string>en/images/down.gif</string>
+          <string>en/images/gb.gif</string>
+          <string>en/images/index_AboutPic.jpg</string>
+          <string>en/images/index_NewsPic.jpg</string>
+          <string>en/images/info_ActiveN.gif</string>
+          <string>en/images/info_ActiveY.gif</string>
+          <string>en/images/info_manage.gif</string>
+          <string>en/images/info_num.gif</string>
+          <string>en/images/info_title.gif</string>
+          <string>en/images/info_view.gif</string>
+          <string>en/images/inputbg.gif</string>
+          <string>en/images/leftmenu.gif</string>
+          <string>en/images/logo.gif</string>
+          <string>en/images/logo.jpg</string>
+          <string>en/images/mainmenu.gif</string>
+          <string>en/images/MainMenu_bg.gif</string>
+          <string>en/images/more.gif</string>
+          <string>en/images/nav_bg.gif</string>
+          <string>en/images/netgather_com.gif</string>
+          <string>en/images/product_arrow.gif</string>
+          <string>en/images/right.gif</string>
+          <string>en/images/searchbut.gif</string>
+          <string>en/images/searchinp.gif</string>
+          <string>en/images/site_nav.jpg</string>
+          <string>en/images/site_title.gif</string>
+          <string>en/images/tel.gif</string>
+          <string>en/images/v_line.gif</string>
+          <string>en/images/v_line2.gif</string>
+          <string>favicon.ico</string>
           <string>images/404.gif</string>
           <string>images/404_bg.gif</string>
           <string>images/bell.gif</string>
@@ -111,6 +161,7 @@
           <string>images/xheditor_emot/default/tongue.gif</string>
           <string>images/xheditor_emot/default/wail.gif</string>
           <string>images/xheditor_emot/default/wronged.gif</string>
+          <string>index.jsp</string>
           <string>js/all.js</string>
           <string>js/ddsmoothmenu.js</string>
           <string>js/ie6png.js</string>
@@ -124,7 +175,6 @@
           <string>js/xheditor/edit_config.js</string>
           <string>js/xheditor/xheditor-1.1.14-zh-cn.min.js</string>
           <string>js/xheditor/xheditor_skin/o2007blue/iframe.css</string>
-          <string>js/xheditor/xheditor_skin/o2007blue/ui.css</string>
           <string>js/xheditor/xheditor_skin/o2007blue/img/anchor.gif</string>
           <string>js/xheditor/xheditor_skin/o2007blue/img/buttonbg.gif</string>
           <string>js/xheditor/xheditor_skin/o2007blue/img/close.gif</string>
@@ -145,6 +195,11 @@
           <string>js/xheditor/xheditor_skin/o2007blue/img/tag-pre.gif</string>
           <string>js/xheditor/xheditor_skin/o2007blue/img/waiting.gif</string>
           <string>js/xheditor/xheditor_skin/o2007blue/img/wmp.gif</string>
+          <string>js/xheditor/xheditor_skin/o2007blue/ui.css</string>
+          <string>lib/Xslider/images/arrow3.gif</string>
+          <string>lib/Xslider/images/productshow.png</string>
+          <string>lib/Xslider/Xslider.css</string>
+          <string>lib/Xslider/Xslider.js</string>
           <string>META-INF/MANIFEST.MF</string>
           <string>uploadfile/20110611014993929392.jpg</string>
           <string>uploadfile/20110611021745864586.jpg</string>
@@ -170,67 +225,65 @@
           <string>uploadfile/structure_small.png</string>
           <string>views/a-aboutUs.jsp</string>
           <string>views/a-index.jsp</string>
+          <string>views/a-jobs.jsp</string>
+          <string>views/a-jobsList.jsp</string>
           <string>views/a-left.jsp</string>
           <string>views/a-login.jsp</string>
           <string>views/a-main.jsp</string>
           <string>views/a-news.jsp</string>
           <string>views/a-newsList.jsp</string>
+          <string>views/a-product.jsp</string>
+          <string>views/a-productList.jsp</string>
           <string>views/a-top.jsp</string>
           <string>views/a-webInfo.jsp</string>
           <string>views/about-us.jsp</string>
           <string>views/home-page.jsp</string>
+          <string>views/jobs-detail.jsp</string>
+          <string>views/jobs-list.jsp</string>
           <string>views/news-detail.jsp</string>
           <string>views/news-list.jsp</string>
-          <string>views/a-product.jsp</string>
-          <string>views/a-productList.jsp</string>
-          <string>views/product-list.jsp</string>
           <string>views/product-detail.jsp</string>
-          <string>views/a-jobsList.jsp</string>
-          <string>views/a-jobs.jsp</string>
-          <string>views/jobs-list.jsp</string>
-          <string>views/jobs-detail.jsp</string>
-          <string>WEB-INF/tags.tld</string>
-          <string>WEB-INF/web.xml</string>
-          <string>WEB-INF/sql/chyuan.sql</string>
-          <string>WEB-INF/classes/com/chyuan/webInfo/model/WebInfo.class</string>
-          <string>WEB-INF/classes/com/chyuan/webInfo/home/WebInfoHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/webInfo/dao/WebInfoDAO.class</string>
-          <string>WEB-INF/classes/com/chyuan/webInfo/controllers/WebInfoController.class</string>
-          <string>WEB-INF/classes/com/chyuan/utils/Utils.class</string>
-          <string>WEB-INF/classes/com/chyuan/utils/Page.class</string>
-          <string>WEB-INF/classes/com/chyuan/utils/Md5.class</string>
-          <string>WEB-INF/classes/com/chyuan/utils/Constants.class</string>
-          <string>WEB-INF/classes/com/chyuan/user/model/User.class</string>
-          <string>WEB-INF/classes/com/chyuan/user/dao/UserDAO.class</string>
-          <string>WEB-INF/classes/com/chyuan/upload/utils/UploadUtil.class</string>
-          <string>WEB-INF/classes/com/chyuan/upload/controllers/UploadController.class</string>
-          <string>WEB-INF/classes/com/chyuan/taglib/PageTag.class</string>
-          <string>WEB-INF/classes/com/chyuan/search/model/Search.class</string>
-          <string>WEB-INF/classes/com/chyuan/search/controllers/SearchController.class</string>
-          <string>WEB-INF/classes/com/chyuan/product/model/Product.class</string>
-          <string>WEB-INF/classes/com/chyuan/product/home/ProductHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/product/dao/ProductDAO.class</string>
-          <string>WEB-INF/classes/com/chyuan/product/controllers/ProductController.class</string>
-          <string>WEB-INF/classes/com/chyuan/news/model/News.class</string>
-          <string>WEB-INF/classes/com/chyuan/news/home/NewsHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/news/dao/NewsDAO.class</string>
-          <string>WEB-INF/classes/com/chyuan/news/controllers/NewsController.class</string>
-          <string>WEB-INF/classes/com/chyuan/login/model/Login.class</string>
-          <string>WEB-INF/classes/com/chyuan/login/home/LoginHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/login/controllers/LoginController.class</string>
-          <string>WEB-INF/classes/com/chyuan/language/LanguageResouces.class</string>
-          <string>WEB-INF/classes/com/chyuan/jobs/model/Jobs.class</string>
-          <string>WEB-INF/classes/com/chyuan/jobs/home/JobsHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/jobs/dao/JobsDAO.class</string>
-          <string>WEB-INF/classes/com/chyuan/jobs/controllers/JobsController.class</string>
-          <string>WEB-INF/classes/com/chyuan/interceptor/WebInfoInterceptor.class</string>
-          <string>WEB-INF/classes/com/chyuan/interceptor/LoginRequiredInterceptor.class</string>
-          <string>WEB-INF/classes/com/chyuan/interceptor/LoginRequired.class</string>
-          <string>WEB-INF/classes/com/chyuan/index/controllers/IndexController.class</string>
-          <string>WEB-INF/classes/com/chyuan/aboutUs/model/AboutUs.class</string>
-          <string>WEB-INF/classes/com/chyuan/aboutUs/home/AboutUsHome.class</string>
-          <string>WEB-INF/classes/com/chyuan/aboutUs/dao/AboutUsDAO.class</string>
+          <string>views/product-list.jsp</string>
           <string>WEB-INF/classes/com/chyuan/aboutUs/controllers/AboutUsController.class</string>
+          <string>WEB-INF/classes/com/chyuan/aboutUs/dao/AboutUsDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/aboutUs/home/AboutUsHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/aboutUs/model/AboutUs.class</string>
+          <string>WEB-INF/classes/com/chyuan/index/controllers/IndexController.class</string>
+          <string>WEB-INF/classes/com/chyuan/interceptor/LoginRequired.class</string>
+          <string>WEB-INF/classes/com/chyuan/interceptor/LoginRequiredInterceptor.class</string>
+          <string>WEB-INF/classes/com/chyuan/interceptor/WebInfoInterceptor.class</string>
+          <string>WEB-INF/classes/com/chyuan/jobs/controllers/JobsController.class</string>
+          <string>WEB-INF/classes/com/chyuan/jobs/dao/JobsDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/jobs/home/JobsHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/jobs/model/Jobs.class</string>
+          <string>WEB-INF/classes/com/chyuan/language/LanguageResouces.class</string>
+          <string>WEB-INF/classes/com/chyuan/login/controllers/LoginController.class</string>
+          <string>WEB-INF/classes/com/chyuan/login/home/LoginHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/login/model/Login.class</string>
+          <string>WEB-INF/classes/com/chyuan/news/controllers/NewsController.class</string>
+          <string>WEB-INF/classes/com/chyuan/news/dao/NewsDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/news/home/NewsHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/news/model/News.class</string>
+          <string>WEB-INF/classes/com/chyuan/product/controllers/ProductController.class</string>
+          <string>WEB-INF/classes/com/chyuan/product/dao/ProductDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/product/home/ProductHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/product/model/Product.class</string>
+          <string>WEB-INF/classes/com/chyuan/search/controllers/SearchController.class</string>
+          <string>WEB-INF/classes/com/chyuan/search/model/Search.class</string>
+          <string>WEB-INF/classes/com/chyuan/taglib/PageTag.class</string>
+          <string>WEB-INF/classes/com/chyuan/test/Test.class</string>
+          <string>WEB-INF/classes/com/chyuan/upload/controllers/UploadController.class</string>
+          <string>WEB-INF/classes/com/chyuan/upload/utils/UploadUtil.class</string>
+          <string>WEB-INF/classes/com/chyuan/user/dao/UserDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/user/model/User.class</string>
+          <string>WEB-INF/classes/com/chyuan/utils/Constants.class</string>
+          <string>WEB-INF/classes/com/chyuan/utils/Md5.class</string>
+          <string>WEB-INF/classes/com/chyuan/utils/Page.class</string>
+          <string>WEB-INF/classes/com/chyuan/utils/Utils.class</string>
+          <string>WEB-INF/classes/com/chyuan/webInfo/controllers/WebInfoController.class</string>
+          <string>WEB-INF/classes/com/chyuan/webInfo/dao/WebInfoDAO.class</string>
+          <string>WEB-INF/classes/com/chyuan/webInfo/home/WebInfoHome.class</string>
+          <string>WEB-INF/classes/com/chyuan/webInfo/model/WebInfo.class</string>
           <string>WEB-INF/error/404.jsp</string>
           <string>WEB-INF/error/500.jsp</string>
           <string>WEB-INF/include/a_common.jsp</string>
@@ -242,59 +295,9 @@
           <string>WEB-INF/include/menu.jsp</string>
           <string>WEB-INF/include/search.jsp</string>
           <string>WEB-INF/include/taglibs.jsp</string>
-          <string>en/chat/Chat_Close.gif</string>
-          <string>en/chat/Chat_Open.gif</string>
-          <string>en/chat/Chat_Top.gif</string>
-          <string>en/chat/Chat_title.gif</string>
-          <string>en/chat/Chat_bottom.gif</string>
-          <string>en/chat/Chat_bg.gif</string>
-          <string>en/chat/msn.gif</string>
-          <string>en/chat/site_chat.css</string>
-          <string>en/chat/site_chat.js</string>
-          <string>en/css/ddsmoothmenu.css</string>
-          <string>en/css/webmain.css</string>
-          <string>en/images/tel.gif</string>
-          <string>en/images/leftmenu.gif</string>
-          <string>en/images/site_title.gif</string>
-          <string>en/images/info_view.gif</string>
-          <string>en/images/del.gif</string>
-          <string>en/images/info_manage.gif</string>
-          <string>en/images/index_AboutPic.jpg</string>
-          <string>en/images/inputbg.gif</string>
-          <string>en/images/index_NewsPic.jpg</string>
-          <string>en/images/netgather_com.gif</string>
-          <string>en/images/info_title.gif</string>
-          <string>en/images/info_num.gif</string>
-          <string>en/images/data_re.gif</string>
-          <string>en/images/right.gif</string>
-          <string>en/images/searchbut.gif</string>
-          <string>en/images/body_bg.gif</string>
-          <string>en/images/down.gif</string>
-          <string>en/images/cn.gif</string>
-          <string>en/images/info_ActiveN.gif</string>
-          <string>en/images/v_line.gif</string>
-          <string>en/images/gb.gif</string>
-          <string>en/images/banner01.jpg</string>
-          <string>en/images/site_nav.gif</string>
-          <string>en/images/info_ActiveY.gif</string>
-          <string>en/images/banner03.jpg</string>
-          <string>en/images/product_arrow.gif</string>
-          <string>en/images/more.gif</string>
-          <string>en/images/v_line2.gif</string>
-          <string>en/images/banner02.jpg</string>
-          <string>en/images/del_all.gif</string>
-          <string>en/images/searchinp.gif</string>
-          <string>en/images/copyright_bg.gif</string>
-          <string>en/images/logo.gif</string>
-          <string>en/images/nav_bg.gif</string>
-          <string>en/images/banner_bg.gif</string>
-          <string>en/images/back.gif</string>
-          <string>en/images/mainmenu.gif</string>
-          <string>en/images/MainMenu_bg.gif</string>
-          <string>lib/Xslider/Xslider.css</string>
-          <string>lib/Xslider/Xslider.js</string>
-          <string>lib/Xslider/images/arrow3.gif</string>
-          <string>lib/Xslider/images/productshow.png</string>
+          <string>WEB-INF/sql/chyuan.sql</string>
+          <string>WEB-INF/tags.tld</string>
+          <string>WEB-INF/web.xml</string>
           <string>WEB-INF/classes/applicationContext.xml</string>
           <string>WEB-INF/classes/log4j.xml</string>
           <string>WEB-INF/lib/paoding-rose-1.0-stable.jar</string>

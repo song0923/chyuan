@@ -1,15 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%-- 中英语言切换 --%>
 <div class="top">
-	<img src="${domain}/${language}/images/logo.gif" width="650" height="90"
+	<img src="${domain}/${language}/images/logo.jpg" width="650" height="90"
 		alt="${company}" />
-	<c:if test="${language == 'cn'}">
+	<%-- <c:if test="${language == 'cn'}">
 		<div id="lang"><a href="${domain}/en/index"><img src="/en/images/gb.gif" width="16" height="11"/>${resouces.language}</a></div>
 	</c:if>
 	<c:if test="${language == 'en'}">
 		<div id="lang"><a href="${domain}/cn/index"><img src="/cn/images/cn.gif" width="16" height="11"/>${resouces.language}</a></div>
-	</c:if>
+	</c:if> --%>
 </div>
 
 <div id="MainMenu" class="ddsmoothmenu">
