@@ -18,6 +18,7 @@ import com.chyuan.news.model.News;
 import com.chyuan.product.home.ProductHome;
 import com.chyuan.product.model.Product;
 import com.chyuan.utils.Constants;
+import com.chyuan.utils.RePageConstants;
 import com.chyuan.utils.Utils;
 
 @Path("")
@@ -45,7 +46,7 @@ public class IndexController {
 			language = Constants.LANGUAGE_CN;
 		}
 		this.getHomePageData(language);
-		return Constants.HOME_PAGE;
+		return RePageConstants.HOME_PAGE;
 	}
 	
 	/**
@@ -56,7 +57,7 @@ public class IndexController {
 	public String index(){
 		String language = Constants.LANGUAGE_CN;
 		this.getHomePageData(language);
-		return Constants.HOME_PAGE;
+		return RePageConstants.HOME_PAGE;
 	}
 	
 	/**

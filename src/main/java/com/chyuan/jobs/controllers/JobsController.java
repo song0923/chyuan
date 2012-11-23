@@ -15,6 +15,7 @@ import com.chyuan.jobs.home.JobsHome;
 import com.chyuan.jobs.model.Jobs;
 import com.chyuan.utils.Constants;
 import com.chyuan.utils.Page;
+import com.chyuan.utils.RePageConstants;
 
 @Path("")
 public class JobsController {
@@ -34,7 +35,7 @@ public class JobsController {
 	public String jobsDetail(@Param("id")Long id){
 		Jobs jobs = jobsHome.getJobs(id);
 		inv.addModel("Jobs", jobs);
-		return Constants.JOBS_DETAIL;
+		return RePageConstants.JOBS_DETAIL;
 	}
 	
 	/**
@@ -51,7 +52,7 @@ public class JobsController {
 		Page<Jobs> page = new Page<Jobs>(total, Constants.PAGE_SIZE, pageIndex, jobsList);
 		inv.addModel("page", page);
 		inv.addModel("jobsList", jobsList);
-		return Constants.JOBS_LIST;
+		return RePageConstants.JOBS_LIST;
 	}
 	
 	/********************************** 后台控制器  ***********************************/
@@ -72,7 +73,7 @@ public class JobsController {
 		inv.addModel("page", page);
 		inv.addModel("jobsList", jobsList);
 		inv.addModel("type", type);
-		return Constants.A_JOBS_LIST;
+		return RePageConstants.A_JOBS_LIST;
 	}
 	
 	/**
@@ -86,7 +87,7 @@ public class JobsController {
 		String titler = "添加";
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_JOBS;
+		return RePageConstants.A_JOBS;
 	}
 	
 	/**
@@ -103,7 +104,7 @@ public class JobsController {
 		inv.addModel("jobs", jobs);
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_JOBS;
+		return RePageConstants.A_JOBS;
 	}
 	
 	/**

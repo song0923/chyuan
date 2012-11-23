@@ -5,11 +5,14 @@ import net.paoding.rose.web.annotation.Param;
 import net.paoding.rose.web.annotation.Path;
 import net.paoding.rose.web.annotation.rest.Get;
 import net.paoding.rose.web.annotation.rest.Post;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.chyuan.aboutUs.home.AboutUsHome;
 import com.chyuan.aboutUs.model.AboutUs;
 import com.chyuan.interceptor.LoginRequired;
 import com.chyuan.utils.Constants;
+import com.chyuan.utils.RePageConstants;
 
 @Path("")
 public class AboutUsController {
@@ -30,7 +33,7 @@ public class AboutUsController {
 		Integer type = language.equals(Constants.LANGUAGE_CN) ? 1 : 2;
 		AboutUs aboutUs = aboutUsHome.getAboutUsByType(type);
 		inv.addModel("aboutUs", aboutUs);
-		return Constants.ABOUT_US;
+		return RePageConstants.ABOUT_US;
 	}
 	
 	/**
@@ -43,7 +46,7 @@ public class AboutUsController {
 	public String aboutUsEditPage(@Param("type")Integer type){
 		AboutUs aboutUs = aboutUsHome.getAboutUsByType(type);
 		inv.addModel("aboutUs", aboutUs);
-		return Constants.A_ABOUT_US;
+		return RePageConstants.A_ABOUT_US;
 	}
 	
 	/**
@@ -59,7 +62,7 @@ public class AboutUsController {
 		AboutUs au = aboutUsHome.getAboutUsById(id);
 		inv.addModel("aboutUs", au);
 		inv.addModel("aboutUs_msg", "编辑成功！");
-		return Constants.A_ABOUT_US;
+		return RePageConstants.A_ABOUT_US;
 	}
 	
 }

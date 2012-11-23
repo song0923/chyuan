@@ -22,6 +22,7 @@ import com.chyuan.product.home.ProductHome;
 import com.chyuan.product.model.Product;
 import com.chyuan.user.model.User;
 import com.chyuan.utils.Constants;
+import com.chyuan.utils.RePageConstants;
 
 @Path("admin")
 public class LoginController {
@@ -40,7 +41,7 @@ public class LoginController {
 	 */
 	@Get("")
 	public String loginPage(){
-		return Constants.LOGIN_PAGE;
+		return RePageConstants.LOGIN_PAGE;
 	}
 	
 	/**
@@ -97,7 +98,7 @@ public class LoginController {
 	@Get("index")
 	@LoginRequired
 	public String toIndexPage(){
-		return Constants.A_INDEX;
+		return RePageConstants.A_INDEX;
 	}
 	
 	/**
@@ -119,7 +120,7 @@ public class LoginController {
 		inv.addModel("newsTotal", newsTotal);
 		inv.addModel("productList", productList);
 		inv.addModel("productToal", productToal);
-		return Constants.A_MAIN;
+		return RePageConstants.A_MAIN;
 	}
 	
 	/**
@@ -131,6 +132,6 @@ public class LoginController {
 	public String loginOut(){
 		HttpSession session = inv.getRequest().getSession();
 		session.removeAttribute(Constants.LOGIN_USER);
-		return Constants.LOGIN_PAGE;
+		return RePageConstants.LOGIN_PAGE;
 	}
 }

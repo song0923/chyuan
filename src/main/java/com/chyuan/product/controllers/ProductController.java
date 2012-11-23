@@ -15,6 +15,7 @@ import com.chyuan.product.home.ProductHome;
 import com.chyuan.product.model.Product;
 import com.chyuan.utils.Constants;
 import com.chyuan.utils.Page;
+import com.chyuan.utils.RePageConstants;
 
 @Path("")
 public class ProductController {
@@ -33,7 +34,7 @@ public class ProductController {
 	public String productDetail(@Param("id")Long id){
 		Product product = productHome.getProduct(id);
 		inv.addModel("product", product);
-		return Constants.PRODUCT_DETAIL;
+		return RePageConstants.PRODUCT_DETAIL;
 	}
 	
 	/**
@@ -50,7 +51,7 @@ public class ProductController {
 		Page<Product> page = new Page<Product>(total, Constants.PRODUCT_PAGE_SIZE, pageIndex, productList);
 		inv.addModel("page", page);
 		inv.addModel("productList", productList);
-		return Constants.PRODUCT_LIST;
+		return RePageConstants.PRODUCT_LIST;
 	}
 	
 	/********************************** 后台控制器  ***********************************/
@@ -70,7 +71,7 @@ public class ProductController {
 		inv.addModel("page", page);
 		inv.addModel("productList", productList);
 		inv.addModel("type", type);
-		return Constants.A_PRODUCT_LIST;
+		return RePageConstants.A_PRODUCT_LIST;
 	}
 	
 	/**
@@ -84,7 +85,7 @@ public class ProductController {
 		String titler = "添加";
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_PRODUCT;
+		return RePageConstants.A_PRODUCT;
 	}
 	
 	/**
@@ -101,7 +102,7 @@ public class ProductController {
 		inv.addModel("product", product);
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_PRODUCT;
+		return RePageConstants.A_PRODUCT;
 	}
 	
 	/**

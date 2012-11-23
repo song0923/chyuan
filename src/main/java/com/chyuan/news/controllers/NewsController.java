@@ -1,17 +1,21 @@
 package com.chyuan.news.controllers;
 
 import java.util.List;
+
 import net.paoding.rose.web.InvocationLocal;
 import net.paoding.rose.web.annotation.Param;
 import net.paoding.rose.web.annotation.Path;
 import net.paoding.rose.web.annotation.rest.Get;
 import net.paoding.rose.web.annotation.rest.Post;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.chyuan.interceptor.LoginRequired;
 import com.chyuan.news.home.NewsHome;
 import com.chyuan.news.model.News;
 import com.chyuan.utils.Constants;
 import com.chyuan.utils.Page;
+import com.chyuan.utils.RePageConstants;
 
 @Path("")
 public class NewsController {
@@ -31,7 +35,7 @@ public class NewsController {
 	public String newsDetail(@Param("id")Long id){
 		News news = newsHome.getNews(id);
 		inv.addModel("news", news);
-		return Constants.NEWS_DETAIL;
+		return RePageConstants.NEWS_DETAIL;
 	}
 	
 	/**
@@ -48,7 +52,7 @@ public class NewsController {
 		Page<News> page = new Page<News>(total, Constants.PAGE_SIZE, pageIndex, newsList);
 		inv.addModel("page", page);
 		inv.addModel("newsList", newsList);
-		return Constants.NEWS_LIST;
+		return RePageConstants.NEWS_LIST;
 	}
 	
 	/********************************** 后台控制器  ***********************************/
@@ -69,7 +73,7 @@ public class NewsController {
 		inv.addModel("page", page);
 		inv.addModel("newsList", newsList);
 		inv.addModel("type", type);
-		return Constants.A_NEWS_LIST;
+		return RePageConstants.A_NEWS_LIST;
 	}
 	
 	/**
@@ -83,7 +87,7 @@ public class NewsController {
 		String titler = "添加";
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_NEWS;
+		return RePageConstants.A_NEWS;
 	}
 	
 	/**
@@ -100,7 +104,7 @@ public class NewsController {
 		inv.addModel("news", news);
 		inv.addModel("titler", titler);
 		inv.addModel("type", type);
-		return Constants.A_NEWS;
+		return RePageConstants.A_NEWS;
 	}
 	
 	/**

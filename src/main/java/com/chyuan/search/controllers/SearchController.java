@@ -17,6 +17,7 @@ import com.chyuan.product.model.Product;
 import com.chyuan.search.model.Search;
 import com.chyuan.utils.Constants;
 import com.chyuan.utils.Page;
+import com.chyuan.utils.RePageConstants;
 
 @Path("/search")
 public class SearchController {
@@ -40,21 +41,21 @@ public class SearchController {
 			Page<Product> pageProduct = new Page<Product>(totalProduct, Constants.PAGE_SIZE, 1, productList);
 			inv.addModel("productList", productList);
 			inv.addModel("page", pageProduct);
-			return Constants.PRODUCT_LIST;
+			return RePageConstants.PRODUCT_LIST;
 		case Constants.SEARCH_NEWS:
 			List<News> newsList = newsHome.getNewsList(search.getType(), 0, Constants.PAGE_SIZE, "%" + search.getSearchText() + "%");
 			int totalNews = newsHome.countGetNewsList(search.getType(), "%" + search.getSearchText() + "%");
 			Page<News> pageNews = new Page<News>(totalNews, Constants.PAGE_SIZE, 1, newsList);
 			inv.addModel("newsList", newsList);
 			inv.addModel("page", pageNews);
-			return Constants.NEWS_LIST;
+			return RePageConstants.NEWS_LIST;
 		case Constants.SEARCH_JOBS:
 			List<Jobs> jobsList = jobsHome.getJobsList(search.getType(), 0, Constants.PAGE_SIZE, "%" + search.getSearchText() + "%");
 			int totalJobs = jobsHome.countGetJobsList(search.getType(), "%" + search.getSearchText() + "%");
 			Page<Jobs> pageJobs = new Page<Jobs>(totalJobs, Constants.PAGE_SIZE, 1, jobsList);
 			inv.addModel("jobsList", jobsList);
 			inv.addModel("page", pageJobs);
-			return Constants.JOBS_LIST;
+			return RePageConstants.JOBS_LIST;
 		default:
 			return null;
 		}
