@@ -80,4 +80,8 @@ public class RePageConstants {
 	 * 新增、修改招聘
 	 */
 	public static final String A_JOBS = "a-jobs";
+	/**
+	 * 管理员列表
+	 */
+	public static final String A_USER_List = "a-userList";
 }

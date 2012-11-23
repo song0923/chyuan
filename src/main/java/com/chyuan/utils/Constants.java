@@ -111,4 +111,11 @@ public class Constants {
 	 * media访问上下文路径
 	 */
 	public static final String CONTEXT_MEDIA_PATH = CONTEXT_ROOT_PATH + "/media";
+	
+	/******************************** 系统业务常量  ***********************************/
+	/**
+	 * 是否删除。1：是；0：否
+	 */
+	public static final int IS_DELETE_YES = 1;
+	public static final int IS_DELETE_NO = 0;
 }

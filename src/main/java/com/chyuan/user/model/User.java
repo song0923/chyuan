@@ -1,5 +1,7 @@
 package com.chyuan.user.model;
 
+import java.util.Date;
+
 public class User {
 
 	private Long id;
@@ -15,6 +17,14 @@ public class User {
 	 * 密码
 	 */
 	private String password;
+	/**
+	 * 是否删除。1：是；0：否
+	 */
+	private Integer isDelete;
+	/**
+	 * 创建日期
+	 */
+	private Date createTime;
 	
 	public Long getId() {
 		return id;
@@ -39,5 +49,17 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public Integer getIsDelete() {
+		return isDelete;
+	}
+	public void setIsDelete(Integer isDelete) {
+		this.isDelete = isDelete;
+	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 }

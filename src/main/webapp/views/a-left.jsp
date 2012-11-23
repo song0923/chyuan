@@ -41,22 +41,23 @@
         </li></ul>
       </div>
       <p class="menu_bottom">&nbsp;</p> -->
-      <div>
+      <!-- <div>
         <span><a href="#notop">互动信息管理</a></span>
-        <ul class="menu_text"><li>
-        <a href="GuestBook_list.asp" target="mainFrame">网站留言管理</a>
-<a href="SysChat_set.asp?langid=1" target="mainFrame">在线客服设置</a>
+        <ul class="menu_text">
+        	<li>
+        		<a href="GuestBook_list.asp" target="mainFrame">网站留言管理</a>
+				<a href="SysChat_set.asp?langid=1" target="mainFrame">在线客服设置</a>
         </li></ul>
-      </div>
+      </div> -->
       <p class="menu_bottom">&nbsp;</p>
       <div>
         <span><a href="#notop">网站系统设置</a></span>
-        <ul class="menu_text"><li>
-<a href="${domain}/admin/webInfo/editPage/1" target="mainFrame">网站信息设置</a>
-        <a href="ADClass_list.asp" target="mainFrame">网站广告管理</a>
-        <a href="SysAdmin_list.asp" target="mainFrame">网站管理员设置</a>
-        <a href="SysData_backup.asp" target="mainFrame">网站数据库操作</a>
-        </li></ul>
+        <ul class="menu_text">
+        	<li>
+				<a href="${domain}/admin/webInfo/editPage/1" target="mainFrame">网站信息设置</a>
+	        	<a href="${domain}/admin/user/list" target="mainFrame">网站管理员设置</a>
+        	</li>
+        </ul>
       </div>
       <p class="menu_bottom">&nbsp;</p>
     </div>

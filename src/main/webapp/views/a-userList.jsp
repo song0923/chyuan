@@ -18,7 +18,7 @@
 <body>
 	<div id="cms_main">
 		<div class="main_title">
-			<span class="page_content"> 中文内容管理－新闻中心</span>
+			<span class="sys_admin">网站系统设置－网站管理员设置</span>
 		</div>
 		<div class="height5"></div>
 
@@ -26,26 +26,28 @@
 			<tr>
 				<td colspan="5" class="content_list">
 					<ul class="edit_menu">
-						<li><a href="/admin/news/add/${type}" class="edit_add">添加新闻中心</a></li>
+						<li><a href="/admin/news/add/${type}" class="edit_add">添加管理员</a></li>
 					</ul>
 				</td>
 			</tr>
 			<tr class="content_title">
-				<td>序号</td>
-				<td>添加日期</td>
-				<td>标题名称</td>
-				<td>操作</td>
+				<td width="115">序号</td>
+				<td width="150">添加日期</td>
+				<td>用户名</td>
+				<td>真实姓名</td>
+				<td width="140" style="background-image: none;">操作</td>
 			</tr>
 			<c:choose>
-				<c:when test="${not empty newsList}">
-					<c:forEach items="${newsList}" var="news">
+				<c:when test="${not empty userList}">
+					<c:forEach items="${userList}" var="user">
 						<tr class="content_list"
 							onmouseover="this.style.backgroundColor='#D3E1F6'"
 							onmouseout="this.style.backgroundColor=''">
-							<td>${news.id}</td>
+							<td>${user.id}</td>
 							<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss"
-									value="${news.createTime}" /></td>
-							<td>${news.title}</td>
+									value="${user.createTime}" /></td>
+							<td>${user.userName}</td>
+							<td>${user.realName}</td>
 							<td style="background-image: none;">
 								<a href="/admin/news/edit/${news.id}/${type}">
 									<img src="${domain}/images/info_edit.gif"/></a>|
@@ -59,7 +61,7 @@
 					<tr class="content_list"
 							onmouseover="this.style.backgroundColor='#D3E1F6'"
 							onmouseout="this.style.backgroundColor=''">
-						<td colspan="4"><center>暂无新闻</center></td></tr>
+						<td colspan="5"><center>暂无信息</center></td></tr>
 				</c:otherwise>
 			</c:choose>
 		</table>
