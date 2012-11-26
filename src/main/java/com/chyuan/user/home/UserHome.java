@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import com.chyuan.user.dao.UserDAO;
 import com.chyuan.user.model.User;
+import com.chyuan.utils.Md5;
 
 @Component
 public class UserHome {
@@ -29,5 +30,35 @@ public class UserHome {
 	 */
 	public int countGetUserList(){
 		return userDao.countGetUserList();
+	}
+	
+	/**
+	 * 根据ID查询用户
+	 * @param id
+	 * @return
+	 */
+	public User findUserById(Long id){
+		return userDao.findUserById(id);
+	}
+	
+	/**
+	 * 保存用户
+	 * @param user
+	 */
+	public void saveUser(User user){
+		if(null == user.getId()){
+			user.setPassword(Md5.md5s(user.getPassword()));
+			userDao.insertUser(user);
+		}else{
+			userDao.editUser(user);
+		}
+	}
+	
+	/**
+	 * 删除用户
+	 * @param id
+	 */
+	public void deleteUser(Long id){
+		userDao.deleteUser(id);
 	}
 }

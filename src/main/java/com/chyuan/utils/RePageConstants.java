@@ -84,4 +84,8 @@ public class RePageConstants {
 	 * 管理员列表
 	 */
 	public static final String A_USER_List = "a-userList";
+	/**
+	 * 新增、修改管理员
+	 */
+	public static final String A_USER = "a-user";
 }

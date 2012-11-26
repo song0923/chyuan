@@ -8,9 +8,9 @@
 <head>
 <%@include file="/WEB-INF/include/a_common.jsp"%>
 <script>
-	function del(id, type){
+	function del(id){
 		if(confirm('确认删除？')){
-			location.href = "/admin/news/delete/" + id + "/" + type;
+			location.href = "/admin/user/delete/" + id;
 		}
 	}
 </script>
@@ -26,7 +26,7 @@
 			<tr>
 				<td colspan="5" class="content_list">
 					<ul class="edit_menu">
-						<li><a href="/admin/news/add/${type}" class="edit_add">添加管理员</a></li>
+						<li><a href="/admin/user/add" class="edit_add">添加管理员</a></li>
 					</ul>
 				</td>
 			</tr>
@@ -44,14 +44,13 @@
 							onmouseover="this.style.backgroundColor='#D3E1F6'"
 							onmouseout="this.style.backgroundColor=''">
 							<td>${user.id}</td>
-							<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss"
-									value="${user.createTime}" /></td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss" value="${user.createTime}" /></td>
 							<td>${user.userName}</td>
 							<td>${user.realName}</td>
 							<td style="background-image: none;">
-								<a href="/admin/news/edit/${news.id}/${type}">
+								<a href="/admin/user/edit/${user.id}">
 									<img src="${domain}/images/info_edit.gif"/></a>|
-								<a href="javascript:void(0);" onclick="del('${news.id}', '${type}');">
+								<a href="javascript:void(0);" onclick="del('${user.id}');">
 									<img src="${domain}/images/info_del.gif"/></a>
 							</td>
 						</tr>

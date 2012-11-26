@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@taglib uri= "http://java.sun.com/jsp/jstl/core" prefix ="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -55,7 +56,9 @@
         <ul class="menu_text">
         	<li>
 				<a href="${domain}/admin/webInfo/editPage/1" target="mainFrame">网站信息设置</a>
-	        	<a href="${domain}/admin/user/list" target="mainFrame">网站管理员设置</a>
+				<c:if test="${sessionUser.userName eq 'admin'}">
+	        		<a href="${domain}/admin/user/list" target="mainFrame">网站管理员设置</a>
+	        	</c:if>
         	</li>
         </ul>
       </div>

@@ -13,7 +13,7 @@
 		<div class="top_nav">
 			<div class="top_admin" id="close_left">
 				<img src="${domain}/images/top_close.gif" alt="关闭左边管理菜单"
-					onclick="switchBar(this)" /><span>您好：<b>${user.realName}</b></span>
+					onclick="switchBar(this)" /><span>您好：<b>${sessionUser.realName}</b></span>
 			</div>
 			<div class="top_menu">
 				<a href="${domain}/admin/login/main" target="mainFrame" class="menu_main"><span>后台主页</span></a><a

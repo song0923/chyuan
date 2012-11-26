@@ -9,7 +9,7 @@ public class Constants {
 	/**
 	 * 登录用户存储session的key
 	 */
-	public static final String LOGIN_USER = "user";
+	public static final String LOGIN_USER = "sessionUser";
 	/**
 	 * 网站语言：中文
 	 */
@@ -118,4 +118,7 @@ public class Constants {
 	 */
 	public static final int IS_DELETE_YES = 1;
 	public static final int IS_DELETE_NO = 0;
+	
+	public static final String TITLER_ADD = "新增";
+	public static final String TITLER_EDIT = "编辑";
 }
