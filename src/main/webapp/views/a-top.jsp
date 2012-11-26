@@ -16,11 +16,11 @@
 					onclick="switchBar(this)" /><span>您好：<b>${user.realName}</b></span>
 			</div>
 			<div class="top_menu">
-				<a href="${domain}/admin/main" target="mainFrame" class="menu_main"><span>后台主页</span></a><a
+				<a href="${domain}/admin/login/main" target="mainFrame" class="menu_main"><span>后台主页</span></a><a
 					href="${domain}/index" class="menu_view" target="_blank"><span>点击预览网站</span></a>
 			</div>
 			<div class="menu_exit">
-				<a href="${domain}/admin/loginOut" target="_top"><span>退出系统</span></a>
+				<a href="${domain}/admin/login/loginOut" target="_top"><span>退出系统</span></a>
 			</div>
 		</div>
 	</div>

@@ -14,7 +14,7 @@ import com.chyuan.upload.utils.UploadUtil;
 import com.chyuan.utils.Constants;
 
 
-@Path("")
+@Path("/admin/upload")
 public class UploadController {
 	@Autowired
 	private InvocationLocal inv ;
@@ -24,7 +24,7 @@ public class UploadController {
 	 * @param filedata
 	 * @return
 	 */
-	@Post("/admin/upload/img")
+	@Post("/img")
 	public Object uploadImg(@Param("filedata") MultipartFile filedata){
 		JSONObject json = new JSONObject();
 		String msg = "";
@@ -61,7 +61,7 @@ public class UploadController {
 	 * @param filedata
 	 * @return
 	 */
-	@Post("/admin/upload/flash")
+	@Post("/flash")
 	public Object uploadFlash(@Param("filedata") MultipartFile filedata){
 		JSONObject json = new JSONObject();
 		String msg = "";
@@ -98,7 +98,7 @@ public class UploadController {
 	 * @param filedata
 	 * @return
 	 */
-	@Post("/admin/upload/media")
+	@Post("/media")
 	public Object uploadMedia(@Param("filedata") MultipartFile filedata){
 		JSONObject json = new JSONObject();
 		String msg = "";

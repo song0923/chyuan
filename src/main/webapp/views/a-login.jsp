@@ -55,7 +55,7 @@
 				if(data.status == 0)
 					alert(data.msg);
 				if(data.status == 1)
-					location.href = "${domain}/admin/index";
+					location.href = "${domain}/admin/login/index";
 			}
 		});
 		return true;

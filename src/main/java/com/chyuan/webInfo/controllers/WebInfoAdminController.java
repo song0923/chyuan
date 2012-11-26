@@ -16,8 +16,9 @@ import com.chyuan.utils.Utils;
 import com.chyuan.webInfo.home.WebInfoHome;
 import com.chyuan.webInfo.model.WebInfo;
 
-@Path("")
-public class WebInfoController {
+@LoginRequired
+@Path("/admin/webInfo")
+public class WebInfoAdminController {
 	@Autowired
 	private InvocationLocal inv;
 	@Autowired
@@ -29,8 +30,7 @@ public class WebInfoController {
 	 * 后台：跳转到网站信息编辑页面
 	 * @return
 	 */
-	@Get("/admin/webInfo/editPage/{type}")
-	@LoginRequired
+	@Get("/editPage/{type}")
 	public String editWebInfoPage(@Param("type")Integer type){
 		WebInfo webInfo = webInfoHome.getWebInfo(type);
 		inv.addModel("webInfo", webInfo);
@@ -41,8 +41,7 @@ public class WebInfoController {
 	 * 后台：编辑网站信息
 	 * @return
 	 */
-	@Post("/admin/webInfo/edit")
-	@LoginRequired
+	@Post("/edit")
 	public String editWebInfo(WebInfo webInfo){
 		webInfoHome.editWebInfo(webInfo);
 		WebInfo wi = webInfoHome.getWebInfo(webInfo.getType());

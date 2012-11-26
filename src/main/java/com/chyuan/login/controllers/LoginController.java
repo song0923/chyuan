@@ -24,7 +24,7 @@ import com.chyuan.user.model.User;
 import com.chyuan.utils.Constants;
 import com.chyuan.utils.RePageConstants;
 
-@Path("admin")
+@Path("/admin")
 public class LoginController {
 	@Autowired
 	private LoginHome loginHome;
@@ -95,7 +95,7 @@ public class LoginController {
 	 * 跳转到后台index
 	 * @return
 	 */
-	@Get("index")
+	@Get("/login/index")
 	@LoginRequired
 	public String toIndexPage(){
 		return RePageConstants.A_INDEX;
@@ -105,7 +105,7 @@ public class LoginController {
 	 * 跳转到后台主页
 	 * @return
 	 */
-	@Get("main")
+	@Get("/login/main")
 	@LoginRequired
 	public String toMainPage(){
 		//获取产品列表
@@ -127,7 +127,7 @@ public class LoginController {
 	 * 退出登录
 	 * @return
 	 */
-	@Get("loginOut")
+	@Get("/login/loginOut")
 	@LoginRequired
 	public String loginOut(){
 		HttpSession session = inv.getRequest().getSession();

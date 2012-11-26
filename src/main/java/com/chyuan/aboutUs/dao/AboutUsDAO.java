@@ -8,7 +8,7 @@ import com.chyuan.aboutUs.model.AboutUs;
 public interface AboutUsDAO {
 
 	String TABLENAME = " about_us ";
-	String FIELDS = " content ";
+	String FIELDS = " id,content,type ";
 	
 	@SQL("select " + FIELDS + " from " + TABLENAME + " where id = :1")
 	public AboutUs getAboutUsById(Long id);

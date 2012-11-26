@@ -12,7 +12,7 @@
 		<frame src="/views/a-left.jsp" name="leftFrame" scrolling="yes"
 			noresize="noresize" id="leftFrame" title="leftFrame" marginwidth="0"
 			marginheight="0" />
-		<frame src="/admin/main" name="mainFrame"
+		<frame src="/admin/login/main" name="mainFrame"
 			scrolling="yes" noresize="noresize" id="mainFrame" title="mainFrame"
 			marginwidth="0" marginheight="0" />
 	</frameset>
