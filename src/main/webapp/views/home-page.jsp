@@ -10,16 +10,19 @@
 	$(function(){
 		$("#menu_li_homePage").attr("class", "menu_selected");
 		
-		$(".productshow").Xslider({
-			unitdisplayed:4,//可视的单位个数   必需项;
-			numtoMove:1,//该参数是必需项。指定每次移动最小单元的个数
-			//movelength:1,//要移动的单位个数    必需项;
-			maxlength:null,//可视宽度或高度    默认查找要移动对象外层的宽或高度;
-			unitlen:null,//移动的单位宽或高度     默认查找li的尺寸;
-			nowlength:null,//移动最长宽或高（要移动对象的宽度或高度）   默认由li个数乘以unitlen所得的积;
-			dir:"H",//水平移动还是垂直移动，默认H为水平移动，传入V或其他字符则表示垂直移动;
-			autoscroll:2000//自动移动间隔时间     默认null不自动移动;
-		});
+		<!--//--><![CDATA[//><!--
+		var scrollPic_01 = new ScrollPic();
+		scrollPic_01.scrollContId   = "ScrollBox"; //内容容器ID
+		scrollPic_01.arrLeftId      = "LeftArr1";//左箭头ID
+		scrollPic_01.arrRightId     = "RightArr1"; //右箭头ID
+		scrollPic_01.frameWidth     = 648;//显示框宽度
+		scrollPic_01.pageWidth      = 162; //翻页宽度
+		scrollPic_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+		scrollPic_01.space          = 5; //每次移动像素(单位px，越大越快)
+		scrollPic_01.autoPlay       = true; //自动播放
+		scrollPic_01.autoPlayTime   = 5; //自动播放间隔时间(秒)
+		scrollPic_01.initialize(); //初始化
+		//--><!]]>
 	});
 </script>
 </head>
@@ -37,30 +40,31 @@
 							<img src="${domain}/${language}/images/more.gif" width="32" height="5"/>
 						</a>
 					</h2>
-					<div class="productshow">
-						<div class="scrollcontainer">
-							<ul>
-								<c:choose>
-									<c:when test="${not empty productList}">
-										<c:forEach items="${productList}" var="product">
-											<li>
-												<div><a href="${domain}/product/detail/${product.id}" title="${product.title}">
-													<img src="${domain}${product.thumbnail}" alt="${product.title}" width="150" height="95" />
-												</a></div>
-												<p>
-													<a href="${domain}/product/detail/${product.id}" title="${product.title}">${product.title}</a>
-												</p>
-											</li>
-										</c:forEach>
-									</c:when>
-									<c:otherwise>
-										<li></li>
-									</c:otherwise>
-								</c:choose>
-							</ul>
-						</div>
-						<a class="abtn aleft" href="#left">左移</a>
-						<a class="abtn aright" href="#right">右移</a>
+					<div class="productsroll">
+						<div id="LeftArr1" class="ScorllLeft1"></div>
+          				<div id="RightArr1" class="ScorllRight1"></div>
+						<ul id="ScrollBox" class="clearfix">
+							<c:choose>
+								<c:when test="${not empty productList}">
+									<c:forEach items="${productList}" var="product">
+										<li>
+											<a href="${domain}/product/detail/${product.id}" title="${product.title}">
+												<img src="${domain}${product.thumbnail}" alt="${product.title}" width="142" height="102" />
+												<span>${product.title}</span>
+											</a>
+										</li>
+									</c:forEach>
+								</c:when>
+								<c:otherwise>
+									<li>
+										<a href="javascript:void(0);" title="暂无产品">
+											<img src="" alt="暂无产品" width="142" height="102" />
+											<span>暂无产品</span>
+										</a>
+									</li>
+								</c:otherwise>
+							</c:choose>
+						</ul>
 					</div>
 				</div>
 
