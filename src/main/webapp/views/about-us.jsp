@@ -21,7 +21,7 @@
 			<div class="page-right">
 				<div class="site-nav">
 					<span>${resouces.location}</span><a href="${domain}/${language}/index">${resouces.homePage}</a> &gt;&gt; <a
-						href="${domain}/${language}/aboutUs">${resouces.aboutUs}</a>
+						href="${domain}/aboutUs/1">${resouces.aboutUs}</a>
 				</div>
 
 				<div class="page-single">
