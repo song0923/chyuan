@@ -2,22 +2,20 @@ package com.chyuan.upload.controllers;
 
 import java.io.IOException;
 import java.util.UUID;
-import javax.servlet.ServletContext;
-import net.paoding.rose.web.InvocationLocal;
+
 import net.paoding.rose.web.annotation.Param;
 import net.paoding.rose.web.annotation.Path;
 import net.paoding.rose.web.annotation.rest.Post;
+
 import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
+
 import com.chyuan.upload.utils.UploadUtil;
 import com.chyuan.utils.Constants;
 
 
 @Path("/admin/upload")
 public class UploadController {
-	@Autowired
-	private InvocationLocal inv ;
 
 	/**
 	 * 图片上传
@@ -46,8 +44,7 @@ public class UploadController {
 			String sufixx = filedata.getOriginalFilename().substring(filedata.getOriginalFilename().lastIndexOf("."));
 			String fileName = UUID.randomUUID().toString() + "." + sufixx;
 			UploadUtil.saveFile(filedata, Constants.UPLOAD_IMG_PATH, fileName);
-			ServletContext context = inv.getServletContext();
-			String filePath = context.getAttribute("domain") + Constants.CONTEXT_IMG_PATH + "/" + fileName;
+			String filePath = Constants.CONTEXT_IMG_PATH + "/" + fileName;
 			msg = filePath;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -83,8 +80,7 @@ public class UploadController {
 			String sufixx = filedata.getOriginalFilename().substring(filedata.getOriginalFilename().lastIndexOf("."));
 			String fileName = UUID.randomUUID().toString() + "." + sufixx;
 			UploadUtil.saveFile(filedata, Constants.UPLOAD_FLASH_PATH, fileName);
-			ServletContext context = inv.getServletContext();
-			String filePath = context.getAttribute("domain") + Constants.CONTEXT_FLASH_PATH + "/" + fileName;
+			String filePath = Constants.CONTEXT_FLASH_PATH + "/" + fileName;
 			msg = filePath;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -120,8 +116,7 @@ public class UploadController {
 			String sufixx = filedata.getOriginalFilename().substring(filedata.getOriginalFilename().lastIndexOf("."));
 			String fileName = UUID.randomUUID().toString() + "." + sufixx;
 			UploadUtil.saveFile(filedata, Constants.UPLOAD_MEDIA_PATH, fileName);
-			ServletContext context = inv.getServletContext();
-			String filePath = context.getAttribute("domain") + Constants.CONTEXT_MEDIA_PATH + "/" + fileName;
+			String filePath = Constants.CONTEXT_MEDIA_PATH + "/" + fileName;
 			msg = filePath;
 		} catch (IOException e) {
 			e.printStackTrace();

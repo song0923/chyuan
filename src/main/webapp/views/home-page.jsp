@@ -11,10 +11,10 @@
 		$("#menu_li_homePage").attr("class", "menu_selected");
 		
 		$(".productshow").Xslider({
-			unitdisplayed:3,//可视的单位个数   必需项;
-			movelength:1,//要移动的单位个数    必需项;
+			unitdisplayed:4,//可视的单位个数   必需项;
+			numtoMove:1,//该参数是必需项。指定每次移动最小单元的个数
+			//movelength:1,//要移动的单位个数    必需项;
 			maxlength:null,//可视宽度或高度    默认查找要移动对象外层的宽或高度;
-			scrollobj:null,//要移动的对象     默认查找productshow下的ul;
 			unitlen:null,//移动的单位宽或高度     默认查找li的尺寸;
 			nowlength:null,//移动最长宽或高（要移动对象的宽度或高度）   默认由li个数乘以unitlen所得的积;
 			dir:"H",//水平移动还是垂直移动，默认H为水平移动，传入V或其他字符则表示垂直移动;
@@ -38,16 +38,18 @@
 						</a>
 					</h2>
 					<div class="productshow">
-						<a class="abtn aleft" href="#left">左移</a>
-						<div class="imglist_w">
-							<ul class="imglist">
+						<div class="scrollcontainer">
+							<ul>
 								<c:choose>
 									<c:when test="${not empty productList}">
 										<c:forEach items="${productList}" var="product">
 											<li>
-												<a href="${domain}/product/detail/${product.id}" title="${product.title}">
-													<img src="${domain}${product.thumbnail}" alt="${product.title}" width="140" height="100" />
-												<p>${product.title}</p></a>
+												<div><a href="${domain}/product/detail/${product.id}" title="${product.title}">
+													<img src="${domain}${product.thumbnail}" alt="${product.title}" width="150" height="95" />
+												</a></div>
+												<p>
+													<a href="${domain}/product/detail/${product.id}" title="${product.title}">${product.title}</a>
+												</p>
 											</li>
 										</c:forEach>
 									</c:when>
@@ -57,6 +59,7 @@
 								</c:choose>
 							</ul>
 						</div>
+						<a class="abtn aleft" href="#left">左移</a>
 						<a class="abtn aright" href="#right">右移</a>
 					</div>
 				</div>
