@@ -1,18 +1,93 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
-<script type="text/javascript">
-	jQuery(document).ready(function() {
-		$("#banner").KinSlideshow();
-	})
-</script>
-<div id="banner" class="index_banner">
-	<a href="http://www.netgather.com"><img
-		src="${domain}/images/banner01.jpg" alt="多年的经营过程中，不断优化货源渠道，使产品价格更具竞争力！"
-		width="950" height="210" /></a>
-	<a href="http://www.netgather.com"><img
-		src="${domain}/images/banner02.jpg" alt="多年的经营过程中，不断优化货源渠道，使产品价格更具竞争力！"
-		width="950" height="210" /></a>
-	<a href="http://www.netgather.com"><img
-		src="${domain}/images/banner03.jpg" alt="多年的经营过程中，不断优化货源渠道，使产品价格更具竞争力！"
-		width="950" height="210" /></a>
-</div>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>尊敬的访客，您好！服务器发生内部错误。</title>
+<style type="text/css">
+input {
+	font-size: 12px
+}
+
+td {
+	font-size: 12px
+}
+
+.p2 {
+	font-size: 12px
+}
+
+.p6 {
+	font-size: 12px;
+	color: #1b6ad8
+}
+
+a {
+	color: #1b6ad8;
+	text-decoration: none
+}
+
+a:hover {
+	color: red
+}
+</style>
+</head>
+<body>
+	<p align="center"></p>
+	<p align="center"></p>
+	<table cellspacing="0" cellpadding="0" width="540" align="center" border="0">
+		<tbody>
+			<tr>
+				<td valign="top" height="270">
+					<div align=center>
+						<br><img height="211" src="${domain}/images/error/error.gif" width="329"><br><br>
+							<table cellspacing="0" cellpadding="0" width="80%" border="0">
+								<tbody>
+									<tr>
+										<td><font class="p2">&nbsp;&nbsp;&nbsp; <font
+												color="#ff0000"><img height=13 src="${domain}/images/error/emessage.gif"
+													width="12">&nbsp;无法访问本页的原因是：</font></font></td>
+									</tr>
+									<tr>
+										<td height=8></td>
+										<tr>
+											<td>
+												<p>
+													<font color="#000000"><br> 服务器发生内部错误</font>!
+												</p>
+											</td>
+										</tr>
+								</tbody>
+							</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td height="5"></td>
+				<tr>
+					<td align="middle">
+						<center>
+							<table cellspacing="0" cellpadding="0" width="480" border="0">
+								<tbody>
+									<tr>
+										<td width="6"><img height="26" src="${domain}/images/error/left.gif" width="7"></td>
+										<td background="${domain}/images/error/bg.gif">
+											<div align="center">
+												<font class="p6"><a href="${domain}/">返回首页</a>
+													| <a href="javascript:history.go(-1)">返回出错页</a>
+											</div>
+										</td>
+										<td width="7"><img src="${domain}/images/error/right.gif"></td>
+									</tr>
+								</tbody>
+							</table>
+						</center>
+					</td>
+				</tr>
+		</tbody>
+	</table>
+	<p align="center"></p>
+	<p align="center"></p>
+</body>
+</html>
