@@ -75,7 +75,7 @@ a:hover {
 										<td background="${domain}/images/error/bg.gif">
 											<div align="center">
 												<font class="p6"><a href="${domain}/">返回首页</a>
-													| <a href="javascript:history.go(-1)">返回出错页</a>
+													| <a href="javascript:history.go(-1)">返回上一页</a>
 											</div>
 										</td>
 										<td width="7"><img src="${domain}/images/error/right.gif"></td>
