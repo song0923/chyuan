@@ -54,8 +54,8 @@
 							<td class="content_list">
 								<ul class="list_input">
 									<li class="input_l"></li>
-									<li class="input_ma"><input name="webNameCn" type="text"
-										id="webNameCn" value="${webInfo.webNameCn}" /></li>
+									<li class="input_ma"><input name="webName" type="text"
+										id="webName" value="${webInfo.webName}" /></li>
 									<li class="input_r"></li>
 								</ul>
 							</td>
@@ -74,13 +74,13 @@
 						<tr>
 							<td class="content_title">网站关键字</td>
 							<td class="content_list" style="padding-right: 10px"><textarea
-									name="webKeywordCn" cols="90" rows="3" id="webKeywordCn">${webInfo.webKeywordCn}</textarea></td>
+									name="webKeyword" cols="90" rows="3" id="webKeyword">${webInfo.webKeyword}</textarea></td>
 						</tr>
 						<tr>
 							<td class="content_title">网站说明</td>
 							<td class="content_list" style="padding-right: 10px"><textarea
-									name="webDescriptionCn" id="webDescriptionCn" cols="90"
-									rows="3">${webInfo.webDescriptionCn}</textarea></td>
+									name="webDescription" id="webDescription" cols="90"
+									rows="3">${webInfo.webDescription}</textarea></td>
 						</tr>
 						<tr>
 							<td class="content_title">公司名称</td>
@@ -109,8 +109,8 @@
 							<td class="content_list">
 								<ul class="list_input">
 									<li class="input_l"></li>
-									<li class="input_ma"><input name="addressCn" type="text"
-										id="addressCn" value="${webInfo.addressCn}" /></li>
+									<li class="input_ma"><input name="address" type="text"
+										id="address" value="${webInfo.address}" /></li>
 									<li class="input_r"></li>
 								</ul>
 							</td>

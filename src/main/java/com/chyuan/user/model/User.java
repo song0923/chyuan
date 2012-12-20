@@ -2,9 +2,10 @@ package com.chyuan.user.model;
 
 import java.util.Date;
 
-public class User {
+import com.chyuan.common.BaseModel;
 
-	private Long id;
+public class User extends BaseModel {
+	private static final long serialVersionUID = -6735896862823938566L;
 	/**
 	 * 用户名
 	 */
@@ -26,12 +27,6 @@ public class User {
 	 */
 	private Date createTime;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getUserName() {
 		return userName;
 	}

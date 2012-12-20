@@ -28,11 +28,11 @@
 						<li><a
 							href="http://wpa.qq.com/msgrd?v=3&amp;uin=7848126&amp;site=${company}&amp;menu=yes"
 							target="_blank"><img border="0"
-								src="http://wpa.qq.com/pa?p=2:445393201:50"/></a></li>
+								src="http://wpa.qq.com/pa?p=2:583610007:50"/></a></li>
 						<li><a
 							href="http://wpa.qq.com/msgrd?v=3&amp;uin=240357115&amp;site=${company}&amp;menu=yes"
 							title="在线客服" target="_blank"><img border="0"
-								src="http://wpa.qq.com/pa?p=2:56135762:50"/></a></li>
+								src="http://wpa.qq.com/pa?p=2:583610007:50"/></a></li>
 					</ul>
 				</div>
 				<div class="Chat_bottom"></div>

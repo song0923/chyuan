@@ -6,6 +6,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<title>招聘信息 - ${company}</title>
+<%@include file="/WEB-INF/include/keyword.jsp"%>
 <%@include file="/WEB-INF/include/common.jsp"%>
 <script type="text/javascript">
 	$(function(){

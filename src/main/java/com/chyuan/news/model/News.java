@@ -2,11 +2,10 @@ package com.chyuan.news.model;
 
 import java.util.Date;
 
-public class News {
-	/**
-	 * 主键
-	 */
-	private Long id;
+import com.chyuan.common.BaseModel;
+
+public class News extends BaseModel {
+	private static final long serialVersionUID = 6606653479728204826L;
 	/**
 	 * 标题
 	 */
@@ -24,12 +23,6 @@ public class News {
 	 */
 	private Integer type;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getTitle() {
 		return title;
 	}

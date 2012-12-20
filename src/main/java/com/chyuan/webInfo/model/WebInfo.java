@@ -1,14 +1,14 @@
 package com.chyuan.webInfo.model;
 
-public class WebInfo {
-	/**
-	 * 主键
-	 */
-	private Long id;
+import com.chyuan.common.BaseModel;
+
+public class WebInfo extends BaseModel {
+	private static final long serialVersionUID = 2917857533744823445L;
+	
 	/**
 	 * 网站中文名称
 	 */
-	private String webNameCn;
+	private String webName;
 	/**
 	 * 网站地址
 	 */
@@ -16,15 +16,15 @@ public class WebInfo {
 	/**
 	 * 网站关键字
 	 */
-	private String webKeywordCn;
+	private String webKeyword;
 	/**
 	 * 网站说明
 	 */
-	private String webDescriptionCn;
+	private String webDescription;
 	/**
 	 * 公司地址
 	 */
-	private String addressCn;
+	private String address;
 	/**
 	 * 邮编
 	 */
@@ -66,35 +66,11 @@ public class WebInfo {
 	 */
 	private Integer type;
 	
-	public String getWebNameCn() {
-		return webNameCn;
-	}
-	public void setWebNameCn(String webNameCn) {
-		this.webNameCn = webNameCn;
-	}
 	public String getWebsite() {
 		return website;
 	}
 	public void setWebsite(String website) {
 		this.website = website;
-	}
-	public String getWebKeywordCn() {
-		return webKeywordCn;
-	}
-	public void setWebKeywordCn(String webKeywordCn) {
-		this.webKeywordCn = webKeywordCn;
-	}
-	public String getWebDescriptionCn() {
-		return webDescriptionCn;
-	}
-	public void setWebDescriptionCn(String webDescriptionCn) {
-		this.webDescriptionCn = webDescriptionCn;
-	}
-	public String getAddressCn() {
-		return addressCn;
-	}
-	public void setAddressCn(String addressCn) {
-		this.addressCn = addressCn;
 	}
 	public String getPostcode() {
 		return postcode;
@@ -150,16 +126,34 @@ public class WebInfo {
 	public void setHotline(String hotline) {
 		this.hotline = hotline;
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public Integer getType() {
 		return type;
 	}
 	public void setType(Integer type) {
 		this.type = type;
+	}
+	public String getWebName() {
+		return webName;
+	}
+	public void setWebName(String webName) {
+		this.webName = webName;
+	}
+	public String getWebKeyword() {
+		return webKeyword;
+	}
+	public void setWebKeyword(String webKeyword) {
+		this.webKeyword = webKeyword;
+	}
+	public String getWebDescription() {
+		return webDescription;
+	}
+	public void setWebDescription(String webDescription) {
+		this.webDescription = webDescription;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }

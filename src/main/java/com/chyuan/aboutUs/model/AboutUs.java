@@ -1,10 +1,9 @@
 package com.chyuan.aboutUs.model;
 
-public class AboutUs {
-	/**
-	 * 主键
-	 */
-	private Long id;
+import com.chyuan.common.BaseModel;
+
+public class AboutUs extends BaseModel {
+	private static final long serialVersionUID = -2100367750850699846L;
 	/**
 	 * 内容
 	 */
@@ -19,12 +18,6 @@ public class AboutUs {
 	}
 	public void setContent(String content) {
 		this.content = content;
-	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
 	}
 	public Integer getType() {
 		return type;

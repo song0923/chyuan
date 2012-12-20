@@ -2,11 +2,10 @@ package com.chyuan.jobs.model;
 
 import java.util.Date;
 
-public class Jobs {
-	/**
-	 * 主键
-	 */
-	private Long id;
+import com.chyuan.common.BaseModel;
+
+public class Jobs extends BaseModel {
+	private static final long serialVersionUID = -6429460617617388268L;
 	/**
 	 * 标题
 	 */
@@ -24,12 +23,6 @@ public class Jobs {
 	 */
 	private Integer type;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getTitle() {
 		return title;
 	}

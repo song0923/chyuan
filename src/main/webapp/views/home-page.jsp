@@ -5,6 +5,8 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<title>${company}</title>
+<%@include file="/WEB-INF/include/keyword.jsp"%>
 <%@include file="/WEB-INF/include/common.jsp"%>
 <script type="text/javascript">
 	$(function(){

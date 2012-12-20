@@ -2,11 +2,10 @@ package com.chyuan.product.model;
 
 import java.util.Date;
 
-public class Product {
-	/**
-	 * 主键
-	 */
-	private Long id;
+import com.chyuan.common.BaseModel;
+
+public class Product extends BaseModel {
+	private static final long serialVersionUID = -7642852847061345816L;
 	/**
 	 * 标题
 	 */
@@ -28,12 +27,6 @@ public class Product {
 	 */
 	private String thumbnail;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getTitle() {
 		return title;
 	}

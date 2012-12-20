@@ -28,13 +28,14 @@ public class Utils {
 		
 		context.setAttribute("domain", webInfo.getWebsite());
 		context.setAttribute("company", webInfo.getCompany());
-		context.setAttribute("address", webInfo.getAddressCn());
+		context.setAttribute("address", webInfo.getAddress());
 		context.setAttribute("hotline", webInfo.getHotline());
 		context.setAttribute("fax", webInfo.getFax());
 		context.setAttribute("mail", webInfo.getMail());
 		context.setAttribute("postcode", webInfo.getPostcode());
-		
 		context.setAttribute("language", language);
 		context.setAttribute("langType", webInfo.getType());
+		context.setAttribute("webKeyword", webInfo.getWebKeyword());
+		context.setAttribute("webDescription", webInfo.getWebDescription());
 	}
 }
