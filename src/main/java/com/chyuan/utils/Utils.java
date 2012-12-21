@@ -1,8 +1,12 @@
 package com.chyuan.utils;
 
+import java.util.Random;
+
 import javax.servlet.ServletContext;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 import com.chyuan.language.LanguageResouces;
 import com.chyuan.webInfo.home.WebInfoHome;
 import com.chyuan.webInfo.model.WebInfo;
@@ -15,17 +19,18 @@ public class Utils {
 
 	/**
 	 * 给context里面设置网站基本信息
+	 * 
 	 * @param webInfo
 	 * @param context
 	 */
-	public void systemConfig(String language, ServletContext context){
+	public void systemConfig(String language, ServletContext context) {
 		resouces = LanguageResouces.getResoucesInstance(language);
 		Integer type = language.equals(Constants.LANGUAGE_EN) ? 2 : 1;
 		WebInfo webInfo = webInfoHome.getWebInfo(type);
-		
+
 		context.setAttribute("resouces", resouces);
 		context.setAttribute("webInfo", webInfo);
-		
+
 		context.setAttribute("domain", webInfo.getWebsite());
 		context.setAttribute("company", webInfo.getCompany());
 		context.setAttribute("address", webInfo.getAddress());
@@ -37,5 +42,13 @@ public class Utils {
 		context.setAttribute("langType", webInfo.getType());
 		context.setAttribute("webKeyword", webInfo.getWebKeyword());
 		context.setAttribute("webDescription", webInfo.getWebDescription());
+	}
+
+	/**
+	 * 获取随机8位key
+	 * @return
+	 */
+	public static String randomKey() {
+		return String.valueOf(Math.abs(new Random().nextInt())%100000000);
 	}
 }
